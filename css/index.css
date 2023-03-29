@@ -1,0 +1,171 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+body {
+  font-family: Helvetica Neue, Tahoma, Arial, PingFangSC-Regular, Hiragino Sans GB, Microsoft Yahei, sans-serif;
+}
+a {
+  color: #333;
+  text-decoration: none;
+}
+img {
+  vertical-align: middle;
+  width: 100%;
+  height: 100%;
+}
+ul {
+  list-style: none;
+}
+.ellipsis-2 {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+.suspension {
+  z-index: 999;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #fff;
+}
+.suspension .m-navbar {
+  display: flex;
+  justify-content: space-between;
+  height: 11.73333333vmin;
+  padding: 0 3.2vmin 0 4.8vmin;
+  align-items: center;
+}
+.suspension .m-navbar .logo i {
+  font-size: 7.46666667vmin;
+  color: #fb7299;
+}
+.suspension .m-navbar .login {
+  display: flex;
+}
+.suspension .m-navbar .login .search {
+  color: #ccc;
+}
+.suspension .m-navbar .login .search i {
+  font-size: 5.86666667vmin;
+}
+.suspension .m-navbar .login .face {
+  width: 6.4vmin;
+  height: 6.4vmin;
+  margin: 0 4vmin;
+  border-radius: 3.2vmin;
+  overflow: hidden;
+}
+.suspension .m-navbar .login .app-btn {
+  width: 19.2vmin;
+  height: 6.4vmin;
+}
+.suspension .menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 10.66666667vmin;
+  border-bottom: 0.26666667vmin solid #efefef;
+}
+.suspension .menu .tab {
+  flex: 1;
+  overflow: hidden;
+}
+.suspension .menu .tab .tab-list {
+  display: flex;
+  position: relative;
+}
+.suspension .menu .tab .tab-list a {
+  height: 10.4vmin;
+  padding: 0 4.26666667vmin;
+  white-space: nowrap;
+  font-size: 3.73333333vmin;
+  line-height: 10.4vmin;
+}
+.suspension .menu .tab .tab-list a:nth-child(1) {
+  color: #fb7299;
+}
+.suspension .menu .tab .tab-list .line {
+  position: absolute;
+  left: 4.26666667vmin;
+  bottom: -0.26666667vmin;
+  width: 7.46666667vmin;
+  height: 0.66666667vmin;
+  background-color: #fb7299;
+}
+.suspension .menu .after {
+  width: 10.66666667vmin;
+  height: 10.66666667vmin;
+  text-align: center;
+  line-height: 10.66666667vmin;
+}
+.suspension .menu .after i {
+  font-size: 5.33333333vmin;
+  color: #ccc;
+}
+.m-home .video-list {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 22.66666667vmin 1.33333333vmin 0;
+}
+.m-home .video-list a {
+  width: 50%;
+  padding: 2.13333333vmin 1.33333333vmin;
+}
+.m-home .video-list a .card {
+  position: relative;
+  height: 25.86666667vmin;
+}
+.m-home .video-list a .card img {
+  width: 100%;
+}
+.m-home .video-list a .card .count {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 7.46666667vmin;
+  padding: 0 1.33333333vmin;
+  background: linear-gradient(transparent, rgba(0, 0, 0, 0.85));
+}
+.m-home .video-list a .card .count span {
+  font-size: 3.2vmin;
+  color: #fff;
+}
+.m-home .video-list a .title {
+  margin-top: 1.33333333vmin;
+  font-size: 3.2vmin;
+}
+.app {
+  position: fixed;
+  left: 0;
+  bottom: 8vmin;
+  width: 100%;
+  height: 10.13333333vmin;
+  padding: 0 3.46666667vmin;
+}
+.app .btn {
+  height: 10.13333333vmin;
+  background-color: #fb7299;
+  border-radius: 5.06666667vmin;
+  text-align: center;
+  line-height: 10.13333333vmin;
+  color: #fff;
+  box-shadow: 0 0.53333vmin 2.66667vmin rgba(0, 0, 0, 0.2);
+}
+.app .btn i {
+  margin-right: 2.66666667vmin;
+  font-size: 4.26666667vmin;
+}
+.app .btn span {
+  font-size: 3.73333333vmin;
+}

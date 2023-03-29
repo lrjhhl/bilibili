@@ -1,0 +1,177 @@
+@import url(base.less);
+@base :3.75vmin;
+
+.suspension {
+    z-index: 999;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #fff;
+
+    .m-navbar {
+        display: flex;
+        justify-content: space-between;
+        height: (44 / @base);
+        padding: 0 (12 / @base) 0 (18 / @base);
+        align-items: center;
+
+        .logo {
+            i {
+                font-size: (28 / @base);
+                color: #fb7299;
+            }
+        }
+
+        .login {
+            display: flex;
+
+            .search {
+                i {
+                    font-size: (22 / @base);
+                }
+
+                color: #ccc;
+            }
+
+            .face {
+                width: (24 / @base);
+                height: (24 / @base);
+                margin: 0 (15 / @base);
+                border-radius: (12 / @base);
+                overflow: hidden;
+            }
+
+            .app-btn {
+                width: (72 / @base);
+                height: (24 / @base);
+            }
+        }
+    }
+
+    .menu {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: (40 / @base);
+        border-bottom: (1 / @base) solid #efefef;
+
+        .tab {
+            flex: 1;
+            overflow: hidden;
+
+            .tab-list {
+                display: flex;
+                position: relative;
+
+                a {
+                    height: (39 / @base);
+                    padding: 0 (16 / @base);
+                    white-space: nowrap;
+                    font-size: (14 / @base);
+                    line-height: (39 / @base);
+
+                    &:nth-child(1) {
+                        color: #fb7299;
+                    }
+                }
+
+                .line {
+                    position: absolute;
+                    left: (16 / @base);
+                    bottom: (-1 / @base);
+                    width: (28 / @base);
+                    height: (2.5 / @base);
+                    background-color: #fb7299;
+                }
+            }
+        }
+
+        .after {
+            width: (40 / @base);
+            height: (40 / @base);
+            text-align: center;
+            line-height: (40 / @base);
+
+            i {
+                font-size: (20 / @base);
+                color: #ccc;
+            }
+        }
+    }
+}
+
+.m-home {
+    .video-list {
+        display: flex;
+        flex-wrap: wrap;
+        padding: (85 / @base) (5 / @base) 0;
+
+        a {
+            width: 50%;
+
+            padding: (8 / @base) (5 / @base);
+
+            .card {
+                position: relative;
+                height: (97 / @base);
+
+                img {
+                    width: 100%;
+                }
+
+                .count {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    position: absolute;
+                    left: 0;
+                    bottom: 0;
+                    width: 100%;
+                    height: (28 /@base);
+                    padding: 0 (5 /@base);
+                    background: linear-gradient(transparent, rgba(0, 0, 0, .85));
+
+                    span {
+                        font-size: (12 / @base);
+                        color: #fff;
+                    }
+                }
+            }
+
+            .title {
+                margin-top: (5 / @base);
+                font-size: (12 / @base);
+            }
+        }
+    }
+}
+
+.app {
+    position: fixed;
+    left: 0;
+    bottom: (30 / @base);
+    width: 100%;
+    height: (38 / @base);
+    padding: 0 (13 / @base);
+
+    .btn {
+        height: (38 / @base);
+        background-color: #fb7299;
+        border-radius: (19 / @base);
+        text-align: center;
+        line-height: (38 / @base);
+        color: #fff;
+        box-shadow: 0 0.53333vmin 2.66667vmin rgba(0, 0, 0, .2);
+
+        i {
+            margin-right: (10 / @base);
+            font-size: (16 / @base);
+        }
+
+        span {
+
+            font-size: (14 / @base);
+        }
+    }
+}
